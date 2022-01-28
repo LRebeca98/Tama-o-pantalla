@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+    margin: 0
+}
+
+body {
+    margin: 0 auto;
+    min-width: 300px;
+    height: 100vh;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+main,
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    flex-direction: column;
+}
+
+header {
+    height: 20%;
+    min-height: 55px;
+    text-align: center;
+}
+
+main {
+    flex-grow: 1; 
+}
+
+footer {
+    height: 10%;
+    min-height: 30px;
+}
+
+@media (orientation:portrait) {
+    body {
+        background-color: rgb(250, 188, 165);
+        border: 4px solid red;
+    }
+
+    header {
+        background-color: coral;
+        color: white;
+        border: 4px solid white;
+    }
+
+    main {
+        color: crimson;
+        border: 4px solid rgb(167, 17, 17);
+    }
+
+    footer {
+        background-color: rgb(209, 80, 32);
+        color: white;
+        border: 4px solid rgb(75, 18, 18);
+    }
+
+}
+
+@media (orientation:landscape) {
+    body {
+        background-color: rgb(173, 173, 250);
+        border: 4px solid rgb(204, 201, 231);
+    }
+
+    header {
+        background-color: rgb(84, 84, 252);
+        border: 4px solid rgb(72, 65, 141);
+        color: white;
+    }
+
+    main {
+        color: rgb(16, 16, 255);
+        border: 4px solid rgb(37, 32, 82);
+    }
+
+    footer {
+        background-color: rgb(30, 30, 172);
+        color: white;
+        border: 4px solid rgb(103, 90, 218);
+    }
+
+}
